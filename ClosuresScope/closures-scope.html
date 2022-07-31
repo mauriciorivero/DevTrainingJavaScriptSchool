@@ -14,7 +14,39 @@
     </header>
     <main>
         <h1>Javascript Closure</h1>
-        <section id="sectionWithoutClosure">
+        <section>
+            <div>
+                <a id="linkCase1" href="#">Excercise without closure</a>
+                <a id="linkCase2" href="#">Excercise with closure</a>
+            </div>
+            <div id="introCase1">
+                <p>In this case the closure is not implementing so the coin count does not record the value over time. The following is the code for this implementation</p>
+                <code>
+                    function moneyBox(coins){ <br>
+                        let saveCoins = 0;<br>
+                        saveCoins += coins;<br>
+                        console.log(`MoneyBox: $${saveCoins}`);<br>
+                        document.getElementById("ammountTotal").innerHTML = "Your total save: "+saveCoins;<br>
+                        return saveCoins;<br>
+                    }
+                </code>
+            </div>
+            <div id="introCase2">
+                <p>In this case the closure is implementing so the coin count does record the value over time. The following is the code for this implementation</p>
+                <code>
+                    function moneyBoxClosure(){<br>
+                        let saveCoins=0;<br>
+                        function countCoins(coins){<br>
+                            saveCoins += coins;<br>
+                            console.log(`MoneyBoxClosure: $${saveCoins}`);<br>
+                            document.getElementById("ammountTotal2").innerHTML = "Your total save: "+saveCoins;<br>
+                        }<br>
+                        return countCoins;<br>
+                    }
+                </code>
+            </div>
+        </section>
+        <section id="sectionWithoutClosure" class="sectionExcercise">
             <input id="ammountInput" type="number" placeholder="Insert your ammount">
             <button id="saveAmmountBtn" type="submit">
                 Save ammount
@@ -22,7 +54,7 @@
             <h3 id="ammountResult"></h3>
             <h3 id="ammountTotal"></h3>
         </section>
-        <section id="sectionWithClosure">
+        <section id="sectionWithClosure" class="sectionExcercise">
             <input id="ammountInput2" type="number" placeholder="Insert your ammount">
             <button id="saveAmmountBtn2" type="submit">
                 Save ammount

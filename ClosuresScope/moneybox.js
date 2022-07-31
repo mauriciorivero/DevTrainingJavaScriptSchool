@@ -1,3 +1,25 @@
+//The following are the lines for hidding the sections of the excercises
+document.getElementById("introCase1").style.display="none";
+document.getElementById("introCase2").style.display="none";
+document.getElementById("sectionWithoutClosure").style.display="none";
+document.getElementById("sectionWithClosure").style.display="none";
+
+//The following are the actions for the links (anchor) in the beggning of the screen
+document.getElementById("linkCase1").onclick = function(){
+    document.getElementById("introCase1").style.display = "flex";
+    document.getElementById("sectionWithoutClosure").style.display = "flex";
+    document.getElementById("introCase2").style.display = "none";
+    document.getElementById("sectionWithClosure").style.display = "none";
+}
+
+document.getElementById("linkCase2").onclick = function(){
+    document.getElementById("introCase1").style.display = "none";
+    document.getElementById("sectionWithoutClosure").style.display = "none";
+    document.getElementById("introCase2").style.display = "flex";
+    document.getElementById("sectionWithClosure").style.display = "flex";
+}
+
+//this is the declaration and inicialization for the moneyBox variable used on the closure
 const myMoneyBox = moneyBoxClosure();
 
 //this is the functionality for the button action in the "no closure scenario"
