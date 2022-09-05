@@ -1,6 +1,6 @@
 # Development Training Javascript School _memetics_
 
-This is a project to store and record all the excercises and training code for the javascript's full-stack developmen course on [Platzi](https://platzi.com/)
+This is a project to store and record all the excercises and training code for the javascript's full-stack development course on [Platzi](https://platzi.com/)
 
 The courses ended and trained are:
 
