@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Selectores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #FFB426;
+            padding: 50px;
+        }
+
+        #titulo-principal{
+            text-decoration: underline;
+        }
+
+        h1{
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            font-family: 'Merriweather', serif;
+            font-size: 25px;
+        }
+
+        h3{
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+        
+        .seccion-explicacion{
+            border: solid 1px black;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        a{
+            background-color: black;
+            color: #FFB426;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            margin-top: 20px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a[href="#titulo-principal"]{
+            border: solid 1px black;
+            background-color: #FFB426;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo-principal">Tipos de Selectores CSS</h1>
+    </header>
+    <main>
+        <p>
+            En este ejercicio estoy mostrando diferentes selectores de CSS y como puedo usarlos, en la descripción puedo mostrarte como estan definidos en esta misma página
+        </p>
+        <section class="seccion-explicacion">
+            <h3>Selectores de tipo</h3>
+            <p>
+                Son los que seleccionan una etiqueta según su tipo (Div, H1, P, Section, etc). En este ejemplo seleccioné el body para cambiarle el color y el padding a 50px asi como también cambiar la tipografia y tamaño a los textos.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">Documentación</a>
+        </section>
+        <section class="seccion-explicacion">
+            <h3>Selectores de clase</h3>
+            <p>
+                Son los que se seleccionan usando el atributo HTML "Class" y colocandole un nombre a ese class y luego relacionandolo en la hoja de estilos como .nombreClase, en este ejemplo estoy seleccionando las secciones de cada explicación de selector con el nombre de clase "seccion-explicacion" y agregandole a este selector atributos de border, border-radius, padding y margin.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">Documentación</a>
+        </section>
+        <section class="seccion-explicacion">
+            <h3>Selectores de ID</h3>
+            <p>
+                Son los que se seleccionan usando el atributo HTML "ID" y colocandole un nombre unico a ese id y luego relacionandolo en la hoja de estilos como #nombreID, en este ejemplo estoy seleccionando el titulo principal de la página y agregandole un atributo de text-decoration como underline.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors">Documentación</a>
+        </section>
+        <section class="seccion-explicacion">
+            <h3>Selectores de Atributo</h3>
+            <p>
+                Son los que se seleccionan usando el valor de algún atributo HTML determinado. En la hoja de estilo se especifcia la etiqueta que se quiere seleccionar y luego entre corchetes [] el par atributo valor que se quiere identificar para seleccionar. En este ejemplo todos las etiquetas anchor tienen el mismo estilo por el selector de tipo, pero solo el hipervinculo del final tiene un estilo distinto gracias a este tipo de seleccion (estoy agregando un hipervinculo al primer elemento de la pagina que es el titulo principal identificado con el ID="titulo-principal").
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">Documentación</a>
+        </section>
+        <section class="seccion-explicacion">
+            <h3>Selector universal</h3>
+            <p>
+                Es el que selecciona a todos los elementos HTML indistintivamente de su tipo y le agrega valores iniciales que se aplican en todo momento en la página, usualmente se usa como práctica de formatear todo los valores iniciales y que no generen conflicto con los distintos navegadores de internet.
+            </p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">Documentación</a>
+        </section>
+        <a href="#titulo-principal">Hacia arriba</a>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
