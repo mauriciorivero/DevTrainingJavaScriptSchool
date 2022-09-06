@@ -8,14 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/MainStyles.css">
     <style>
         *{
             padding: 0;
             margin: 0;
             scroll-behavior: smooth;
         }
+        
         body{
             background-color: #FFB426;
+        }
+
+        header{
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        main{
+            padding: 50px;
+        }
+
+        footer{
             padding: 50px;
         }
 
@@ -60,7 +75,7 @@
             padding: 10px;
             text-decoration: none;
         }
-        a[href="#titulo-principal"]{
+        a[href="#top-bar"]{
             border: solid 1px black;
             background-color: #FFB426;
             color: black
@@ -68,8 +83,11 @@
     </style>
 </head>
 <body>
+    <div id="top-bar" class="top-bar-general">
+
+    </div>
     <header>
-        <h1 id="titulo-principal">Tipos de Selectores CSS</h1>
+        <h1>Tipos de Selectores CSS</h1>
     </header>
     <main>
         <p>
@@ -110,7 +128,7 @@
             </p>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">Documentación</a>
         </section>
-        <a href="#titulo-principal">Hacia arriba</a>
+        <a href="#top-bar">Hacia arriba</a>
     </main>
     <footer>
 
