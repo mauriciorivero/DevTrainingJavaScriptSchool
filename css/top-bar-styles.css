@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+.top-bar-general{
+    align-content: flex-start;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    width: 100%    
+}
+
+.top-bar-general .top-bar-back{
+    background-color: green;
+    color: white;
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+
+.top-bar-general .top-bar-back1lv{
+    background-color: orangered;
+    color: white;
+    height: auto;
+    margin: 0;
+    width: auto;
+}
