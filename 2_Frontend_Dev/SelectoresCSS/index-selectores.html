@@ -85,6 +85,11 @@
             border-bottom: solid 2px black;
             margin-bottom: 20px;
         }
+
+        #combinador-hijo-directo > p{
+            border: solid 2px black;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -141,6 +146,18 @@
             </p>
             <p>
                 Este parrafo tambien se selecciona con este combinador puesto que le estoy diciendo que seleccione todos los p que estén dentro del elemento cuyo ID es: combinador-desc y le agrego un border bottom black de 2 px y un margin-bottom de 20px
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Combinators#selector_de_descendientes">Documentación</a>
+        </section>
+        <section id="combinador-hijo-directo" class="seccion-explicacion">
+            <h3>Combinador hijo directo</h3>
+            <div>
+                <p>
+                    Este parrafo no es el hijo directo porque está dentro de un div por lo que no se estiliza segun el diseño deseado
+                </p>
+            </div>
+            <p>
+                Este parrafo si es el hijo directo por lo que se estiliza segun el diseño deseado
             </p>
             <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Combinators#selector_de_descendientes">Documentación</a>
         </section>
