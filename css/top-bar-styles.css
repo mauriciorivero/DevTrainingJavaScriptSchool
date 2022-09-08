@@ -29,3 +29,14 @@
     margin: 0;
     width: auto;
 }
+
+a{
+    background-color: black;
+    color: #FFB426;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
