@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
         body{
             background-color: #293462;
         }
@@ -179,7 +184,7 @@
         }
 
         .contenedor13{
-            align-items: center;
+            align-items:center;
             background-color: yellow;
             border-radius: 10px;
             display: flex;
@@ -198,6 +203,76 @@
             width: 100%
         }
 
+        .contenedor15{
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor16{
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor17{
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor18{
+            align-items: flex-end;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor19{
+            align-items: flex-end;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor20{
+            align-items: flex-end;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor21{
+            align-items: stretch;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80vh;
+            width: 100%
+        }
+
         .elemento{
             align-items: center;
             border: solid 2px red;
@@ -207,6 +282,16 @@
             justify-content: center;
             height: 50px;
             width: 50px;
+        }
+
+        .elemento2{
+            align-items: center;
+            border: solid 2px red;
+            border-radius: 5px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            padding: 25px;
         }
 
         .elemento>h1{
@@ -409,9 +494,23 @@
             </div>
         </section>
         <section>
-            <h1>Display Flex - justify-content: space-between / align-items: flex-center</h1>
-            <p>En este caso los items se alinean de manera horizontal con espacios entre ellos (space-between y tambien funciona con space-around) y al centro vertical. A partir de aquí ya se entiende la idea, justifiy-content es para alinear horizontalmente y align-items es para alinear verticalmente</p>
+            <h1>Display Flex - justify-content: space-between / align-items: strech</h1>
+            <p>En este caso los items se alinean de manera horizontal con espacios entre ellos (space-between y tambien funciona con space-around)pero verticalmente los items se estiran por todo el alto del contenedor. Solo funciona si los items contenidos no tienen definido un witdh o height</p>
             <div class="contenedor14">
+                <div class="elemento2"><h1>1</h1></div>
+                <div class="elemento2"><h1>2</h1></div>
+                <div class="elemento2"><h1>3</h1></div>
+                <div class="elemento2"><h1>4</h1></div>
+                <div class="elemento2"><h1>5</h1></div>
+                <div class="elemento2"><h1>6</h1></div>
+                <div class="elemento2"><h1>7</h1></div>
+                <div class="elemento2"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - flex-direction: column</h1>
+            <p>En todos los anteriores casos la propiedad flex-direction es por defecto, osea row (items apliados horizontalmente uno detrás del otro, pero con la propiedad flex-direction: column los items se apilan uno encima del otro verticalmente</p>
+            <div class="contenedor15">
                 <div class="elemento"><h1>1</h1></div>
                 <div class="elemento"><h1>2</h1></div>
                 <div class="elemento"><h1>3</h1></div>
@@ -420,6 +519,118 @@
                 <div class="elemento"><h1>6</h1></div>
                 <div class="elemento"><h1>7</h1></div>
                 <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - flex-direction: column-reverse</h1>
+            <p>Con flex-direction: column-reverse los elementos se colocan en columna, pero, quedan ordenados en reversa y empujados hacia le final del contenedor</p>
+            <div class="contenedor16">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - flex-direction: column-reverse with justify-content: flex-end</h1>
+            <p>Con flex-direction: column-reverse combinado con justify-content: flex-end los elementos se colocan en columna ordenados en reversa y empujados hacia el inicio del contenedor (se tiene en cuenta que el eje vertical se ve e reversa y por eso el valor flex-end</p>
+            <div class="contenedor17">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>NOTA IMPORTANTE</h1>
+            <p>Hay que tener en cuenta que flex-direction lo que hace es invertir los ejes o girarlos de row a column, por lo que las propidedades justify-content y align-items se deben usar teniendo en cuenta los ejes iniciales. Es decir si tenía una disposición para mis elementos para ser vistos en registros(row) yo uso justify-content para linearlos horizontalmente, pero si cambio la dirección a columna, debo seguir usando justify-content para alinearlos verticalmente porque giró la dispoción original.</p>
+        </section>
+        <section>
+            <h1>Caso ejemplo para la nota anterior - Parte 1</h1>
+            <p>En este caso particular, queremos alinear los elementos en la esquina superior derecha pero usano flex-direction: column. Inicialmente estan por defecto y esta es su disposición (row)</p>
+            <div class="contenedor1">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Caso ejemplo para la nota anterior - Parte 2</h1>
+            <p>Ahora aplicamos flex-direction: column</p>
+            <div class="contenedor15">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Caso ejemplo para la nota anterior - Parte 3</h1>
+            <p>Ahora le decimos align-items: flex-end para que los envie al final del contenedor que normalmente al ser align-items para centrar vertical nos llevaría todo al fondo, pero como el eje está cambiado gracias a la propiedad flex-direction: column, los items se irán al final pero lado derecho</p>
+            <div class="contenedor18">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Caso ejemplo para la nota anterior - Parte 4</h1>
+            <p>Si aplicaramos la propiedad column reverse, esto es lo que ocurre... Los elementos se empujan visualmente hacia abajo, pero al tener la orientación cambiada por flex-direction, sería empujados hacia el inicio</p>
+            <div class="contenedor19">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Caso ejemplo para la nota anterior - Parte 5</h1>
+            <p>Entonces ahora aplicamos justifiy-content: flex-end para que empujen hacia arriba (visualmente), pero realmente son empujados hacia el final</p>
+            <div class="contenedor20">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - flex-direction: column / justifiy-content space-between / align-items: strech</h1>
+            <p>Para este caso tenemos los items puestos en columna, centrados con justify-content: space-between y con align-items: strech para que se extiendan por todo el contenedos horizontalmente (visualmente hablando).</p>
+            <div class="contenedor21">
+                <div class="elemento2"><h1>1</h1></div>
+                <div class="elemento2"><h1>2</h1></div>
+                <div class="elemento2"><h1>3</h1></div>
+                <div class="elemento2"><h1>4</h1></div>
             </div>
         </section>
         <a href="#top-bar">Hacia arriba</a>
