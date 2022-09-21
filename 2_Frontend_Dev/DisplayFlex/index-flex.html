@@ -100,12 +100,117 @@
             width: 100%
         }
 
+        .contenedor5{
+            background-color: yellow;
+            border-radius: 10px;
+            justify-content: flex-end;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .contenedor6{
+            background-color: yellow;
+            border-radius: 10px;
+            justify-content: center;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .contenedor7{
+            align-items: flex-start;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor8{
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor9{
+            align-items: flex-end;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor10{
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor11{
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor12{
+            align-items: flex-end;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor13{
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            width: 100%
+        }
+
+        .contenedor14{
+            align-items:stretch;
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            width: 100%
+        }
+
         .elemento{
+            align-items: center;
             border: solid 2px red;
             border-radius: 5px;
             background-color: orange;
+            display: flex;
+            justify-content: center;
             height: 50px;
             width: 50px;
+        }
+
+        .elemento>h1{
+            color: red;
         }
     </style>
 </head>
@@ -125,30 +230,196 @@
             <h1>Display Flex - Default</h1>
             <p>En el display flex (solamente declarado) todos los elementos se ubican de manera lineal horizontalmente pegados unos a otros de izquierda a derecha</p>
             <div class="contenedor1">
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
             </div>
         </section>
         <section>
             <h1>Display Flex - justify-content: space-around</h1>
             <p>En el display flex con la propiedad justify-content: space-around todos los elementos se ubican de manera lineal horizontalmente separados con espacios uniformes de acuerdo al ancho total del contenedor padre</p>
             <div class="contenedor2">
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: space-between</h1>
+            <p>En el display flex con la propiedad justify-content: space-between todos los elementos se ubican de manera lineal horizontalmente separados con espacios uniformes de acuerdo al ancho total del contenedor padre, pero teniendo en cuenta que el primer y ultimo elemento quedan pegados en los extremos del contenedor</p>
+            <div class="contenedor3">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
             </div>
         </section>
         <section>
             <h1>Display Flex - justify-content: flex-start</h1>
-            <p>En el display flex con la propiedad justify-content: space-between todos los elementos se ubican de manera lineal horizontalmente separados con espacios uniformes de acuerdo al ancho total del contenedor padre, pero teniendo en cuenta que el primer y ultimo elemento quedan pegados en los extremos del contenedor</p>
+            <p>En el display flex con la propiedad justify-content: flex-start todos los elementos se ubican de manera lineal horizontalmente al inicio de izquierda a derecha (como en la posición default, empujados hacia la izquierda)</p>
             <div class="contenedor4">
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
-                <div class="elemento"></div>
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-end</h1>
+            <p>En el display flex con la propiedad justify-content: flex-end todos los elementos se ubican de manera lineal horizontalmente al final (empujados hacia la derecha)</p>
+            <div class="contenedor5">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: center</h1>
+            <p>En el display flex con la propiedad justify-content: flex-end todos los elementos se ubican de manera lineal horizontalmente en todo el centro</p>
+            <div class="contenedor6">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-start o default / align-items: flex-start o default</h1>
+            <p>Para empezar a a linear items en el eje vertical se usa la propiedad align-items, en este caso justify-content esta por defecto y align item está por defecto por lo que los elementos se alinean a la esquina superior izquierda (inicio por defecto)</p>
+            <div class="contenedor7">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-start o default / align-items: center</h1>
+            <p>En este caso los items de alinean al inicio horizontal y al centro vertical</p>
+            <div class="contenedor8">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-start o default / align-items: flex-end</h1>
+            <p>En este caso los items de alinean al inicio horizontal y al final vertical</p>
+            <div class="contenedor9">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: center / align-items: center</h1>
+            <p>En este caso los items de alinean al centro horizontal y al centro vertical</p>
+            <div class="contenedor10">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-end / align-items: center</h1>
+            <p>En este caso los items de alinean al final horizontal y al centro vertical</p>
+            <div class="contenedor11">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-end / align-items: flex-end</h1>
+            <p>En este caso los items de alinean al final horizontal y al final vertical. A partir de aquí ya se entiende la idea, justifiy-content es para alinear horizontalmente y align-items es para alinear verticalmente</p>
+            <div class="contenedor12">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: space-between / align-items: flex-center</h1>
+            <p>En este caso los items se alinean de manera horizontal con espacios entre ellos (space-between y tambien funciona con space-around) y al centro vertical. A partir de aquí ya se entiende la idea, justifiy-content es para alinear horizontalmente y align-items es para alinear verticalmente</p>
+            <div class="contenedor13">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: space-between / align-items: flex-center</h1>
+            <p>En este caso los items se alinean de manera horizontal con espacios entre ellos (space-between y tambien funciona con space-around) y al centro vertical. A partir de aquí ya se entiende la idea, justifiy-content es para alinear horizontalmente y align-items es para alinear verticalmente</p>
+            <div class="contenedor14">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
             </div>
         </section>
         <a href="#top-bar">Hacia arriba</a>
