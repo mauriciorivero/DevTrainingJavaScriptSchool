@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Color library https://colorhunt.co/palette/2934621cd6cefedb39d61c4e -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <link rel="stylesheet" type="text/css" href="/css/top-bar-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+            background-color: #293462;
+        }
+
+        header{
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        main{
+            padding: 50px;
+        }
+
+        footer{
+            padding: 50px;
+        }
+
+        h1{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 25px;
+        }
+
+        h3{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+        }
+        p{
+            color: #1CD6CE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+        section{
+            border: solid 1px #FEDB39;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .seccion-explicacion:hover{
+            background-color: #D61C4E;
+            border: solid #FEDB39 1px;
+            color: #293462;
+        }
+
+        .contenedor1{
+            background-color: yellow;
+            border-radius: 10px;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .contenedor2{
+            background-color: yellow;
+            border-radius: 10px;
+            justify-content: space-around;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .contenedor3{
+            background-color: yellow;
+            border-radius: 10px;
+            justify-content: space-between;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .contenedor4{
+            background-color: yellow;
+            border-radius: 10px;
+            justify-content: flex-start;
+            display: flex;
+            height: 50vh;
+            width: 100%
+        }
+
+        .elemento{
+            border: solid 2px red;
+            border-radius: 5px;
+            background-color: orange;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar" class="top-bar-general">
+        <a class="top-bar-back" href="">Volver al inicio</a>
+        <a class="top-bar-back1lv" href="../index.html">Volver a practicas CSS</a>
+    </div>
+    <header>
+        <h1>Display Flex</h1>
+    </header>
+    <main>
+        <p>
+            En este ejercicio estoy mostrando diferentes modos de posicionamiento de elementos usando la propiedad CSS display flex
+        </p>
+        <section>
+            <h1>Display Flex - Default</h1>
+            <p>En el display flex (solamente declarado) todos los elementos se ubican de manera lineal horizontalmente pegados unos a otros de izquierda a derecha</p>
+            <div class="contenedor1">
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: space-around</h1>
+            <p>En el display flex con la propiedad justify-content: space-around todos los elementos se ubican de manera lineal horizontalmente separados con espacios uniformes de acuerdo al ancho total del contenedor padre</p>
+            <div class="contenedor2">
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+            </div>
+        </section>
+        <section>
+            <h1>Display Flex - justify-content: flex-start</h1>
+            <p>En el display flex con la propiedad justify-content: space-between todos los elementos se ubican de manera lineal horizontalmente separados con espacios uniformes de acuerdo al ancho total del contenedor padre, pero teniendo en cuenta que el primer y ultimo elemento quedan pegados en los extremos del contenedor</p>
+            <div class="contenedor4">
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+                <div class="elemento"></div>
+            </div>
+        </section>
+        <a href="#top-bar">Hacia arriba</a>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
