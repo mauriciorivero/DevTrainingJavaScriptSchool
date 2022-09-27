@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Color library https://colorhunt.co/palette/2934621cd6cefedb39d61c4e -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <link rel="stylesheet" type="text/css" href="/css/top-bar-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #293462;
+        }
+
+        header{
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        main{
+            padding: 50px;
+        }
+
+        footer{
+            padding: 50px;
+        }
+
+        h1{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 25px;
+        }
+
+        h3{
+            color: #FEDB39;
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+        }
+        p{
+            color: #1CD6CE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+        section{
+            border: solid 1px #FEDB39;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .seccion-explicacion:hover{
+            background-color: #D61C4E;
+            border: solid #FEDB39 1px;
+            color: #293462;
+        }
+
+        .contenedor1{
+            background-color: yellow;
+            border: black solid;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: 50vh;
+            width: 100%
+        }
+
+        .elemento{
+            align-items: center;
+            border: solid 2px red;
+            border-radius: 5px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+        }
+
+        .elemento1{
+            align-items: center;
+            border: solid 2px red;
+            border-radius: 5px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+        }
+
+        .contenedor1 .elemento1:nth-child(1){
+            grid-column: 1 / 2;
+        }
+
+        .contenedor1 .elemento1:nth-child(2){
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .contenedor1 .elemento1:nth-child(3){
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .contenedor1 .elemento1:nth-child(4){
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+        }
+
+        .elemento>h1{
+            color: red;
+        }
+
+        .elemento1>h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar" class="top-bar-general">
+        <a class="top-bar-back" href="">Volver al inicio</a>
+        <a class="top-bar-back1lv" href="../index.html">Volver a practicas CSS</a>
+    </div>
+    <header>
+        <h1>Display Grid</h1>
+    </header>
+    <main>
+        <p>
+            En este ejercicio estoy mostrando diferentes modos de posicionamiento de elementos usando la propiedad CSS display Grid
+        </p>
+        <section>
+            <h1>Display Grid - Default</h1>
+            <p>En el display Grid (solamente declarado) todos los elementos se van cuadrando de manera organizando de izquierda a derecha y si llega al borde del contenedor estos bajan a la siguiente fila automaticamente. En este ejemplo tenemos una grilla de cuatro columnas y cuadro filas</p>
+            <div class="contenedor1">
+                <div class="elemento"><h1>1</h1></div>
+                <div class="elemento"><h1>2</h1></div>
+                <div class="elemento"><h1>3</h1></div>
+                <div class="elemento"><h1>4</h1></div>
+                <div class="elemento"><h1>5</h1></div>
+                <div class="elemento"><h1>6</h1></div>
+                <div class="elemento"><h1>7</h1></div>
+                <div class="elemento"><h1>8</h1></div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Display Grid - organizado</h1>
+            <p>En este ejemplo organizo 4 elementos de manera que esten en diagonal disponiendo uno a uno la posición exacta enla fila y columna correspondiente. Esto lo tengo que hacer es en cada elemento por lo que la declaración del grid-column y grid-row va en el estilo de cada elemento. Usando estas propiedades se van especificando los valore sde acuerdo a los limites horizontales o verticales segun el caso para ir posicionandolos en la grilla ejemplo para el primero grid-column: 1/2 (limtees verticales de la linea 1 y linea 2)</p>
+            <div class="contenedor1">
+                <div class="elemento1"><h1>1</h1></div>
+                <div class="elemento1"><h1>2</h1></div>
+                <div class="elemento1"><h1>3</h1></div>
+                <div class="elemento1"><h1>4</h1></div>
+            </div>
+        </section>
+       
+        <a href="#top-bar">Hacia arriba</a>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
